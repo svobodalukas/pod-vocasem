@@ -1,4 +1,5 @@
 <div class="absolute flex flex-col items-start justify-center h-full {{ heroSettings.headingTextColor or 'text-white' }} {{ structure.g_pageWidth }}">
+  {% svg "logo-inv", "fill-current", "Pod vocasem" %}
   <div class="text-4xl font-semibold leading-tight {{ heroSettings.headingTextCase }} md:text-6xl">
     {{ heroSettings.headingText | safe  }}
   </div>
@@ -10,4 +11,7 @@
       <a href="{{ heroSettings.buttonURL }}" class="p-4 rounded-lg {{ heroSettings.buttonTextColor or colors.buttonCustom.text or colors.buttonDefault.text }} {{ heroSettings.buttonBgColor or colors.buttonCustom.bg or colors.buttonDefault.bg }} hover:{{ colors.buttonCustom.textHover or colors.buttonDefault.textHover }} hover:{{ heroSettings.buttonBgHover or colors.buttonCustom.bgHover or colors.buttonDefault.bgHover }} {{ heroSettings.buttonBorder or colors.buttonCustom.border or colors.buttonDefault.border }}">{{ heroSettings.buttonText }}</a>
     </div>
   {% endif %}
+  {% svg "spotify", "fill-current", "Pod vocasem" %}
+  {% svg "soundcloud", "fill-current", "Pod vocasem" %}
+  {% svg "apple-podcast", "fill-current", "Pod vocasem" %}
 </div>
