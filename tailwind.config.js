@@ -16,6 +16,9 @@ module.exports = {
 	},
 	theme: {
 		extend: {
+			fontFamily: {
+				sans: ['gt-eesti', 'Helvetica Neue', 'sans-serif']
+			},
 			opacity: (theme) => ({
 				5: '.05',
 				10: '.1',

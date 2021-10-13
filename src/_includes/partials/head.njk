@@ -31,3 +31,22 @@
 <link rel="icon" type="image/png" href="{{ '/assets/images/favicon/favicon-16x16.png' | url }}" sizes="16x16">
 {#- RSS Feed #}
 <link type="application/atom+xml" rel="alternate" href="{{ build.url }}/feed.xml" title="{{ meta.siteName }} XML Feed">
+<style>
+  @font-face {
+    font-family: 'gt-eesti';
+    font-display: fallback;
+    src: url('/assets/fonts/gt-eesti-light.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'gt-eesti';
+    font-display: fallback;
+    src: url('/assets/fonts/gt-eesti-medium.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+  }
+</style>
+<link rel="preload" crossorigin="anonymous" href="/assets/fonts/gt-eesti-light.woff2" as="font" type="font/woff2">
+<link rel="preload" crossorigin="anonymous" href="/assets/fonts/gt-eesti-medium.woff2" as="font" type="font/woff2" >
+    

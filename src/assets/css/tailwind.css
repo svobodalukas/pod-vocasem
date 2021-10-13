@@ -6,7 +6,7 @@ h3,
 h4,
 h5,
 h6 {
-	@apply font-semibold text-gray-700;
+	@apply font-semibold;
 }
 h1 {
 	@apply text-4xl;
@@ -50,6 +50,29 @@ code {
 }
 pre code {
 	@apply bg-transparent border-0 rounded-none;
+}
+
+.bg-hero {
+	background: linear-gradient(45deg, hsla(193, 60%, 80%, 0.95), hsla(162, 42%, 70%, 0.85)), url('/assets/images/home/vocas1.jpg');
+}
+
+.btn {
+	@apply flex items-center mb-2 w-full sm:w-auto sm:mr-4 hover:bg-white rounded py-2 px-3;
+	background: rgba(255,255,255, 0.75);
+	box-shadow: 0 1px 3px rgba(0,0,0, 0.1);
+}
+
+.btn:hover {
+	background: rgba(255,255,255, 0.95);
+}
+@variants responsive {
+	.text-7xl {
+		font-size: 4rem;
+	}	
+
+	.text-8xl {
+		font-size: 5rem;
+	}
 }
 
 @tailwind components;
