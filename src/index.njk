@@ -29,9 +29,14 @@ heroSettings:
     reverse: true
     alias: posts
 ---
-{% set postslist = posts | reverse %}
 
-{% set postlist = ['components/postslistcards.njk'] %}
-{% include postlist | join %}
+
+{% if structure.g_showPodcastsList %}
+  {% set postslist = posts | reverse %}
+
+  {% set postlist = ['components/postslistcards.njk'] %}
+  {% include postlist | join %}
+{% endif %}
+
 
 

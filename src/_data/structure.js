@@ -41,6 +41,11 @@ module.exports = {
 	g_showAuthors: false,
 
 	/**
+	 * ===== Display podcasts =====
+	 */
+		 g_showPodcastsList: false,
+
+	/**
 	 * ===== Display podcast links =====
 	 */
 	 g_showSources: true,
