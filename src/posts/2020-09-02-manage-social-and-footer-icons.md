@@ -3,7 +3,10 @@ title: Managing Social Share, Author, and Footer Icons
 date: 2020-09-02T17:44:03.000Z
 author: shane-robinson
 excerpt: You can choose to display, or not, all the icons.
-draft: 
+draft:
+urlSpotify: https://spotify.com
+urlApple: https://apple.com
+urlGoogle: https://google.com     
 seo:
   title:
   description:

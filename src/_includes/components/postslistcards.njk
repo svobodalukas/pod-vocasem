@@ -6,13 +6,10 @@
 
           <div class="flex flex-col overflow-hidden rounded-lg shadow-lg">
             <div class="flex-shrink-0">
-              <a href="{{ post.url | url }}">
-                <img class="object-cover {{ post.data.images.align }} w-full h-48" src={% if post.data.images.thumb %}"/assets/images/{{ post.data.images.thumb }}"{% else %}"/assets/images/david-kovalenko-G85VuTpw6jg-unsplash.jpg"{% endif %} alt="{{ title }} Thumbnail">
-              </a>
+              <img class="object-cover {{ post.data.images.align }} w-full h-48" src={% if post.data.images.thumb %}"/assets/images/{{ post.data.images.thumb }}"{% else %}"/assets/images/david-kovalenko-G85VuTpw6jg-unsplash.jpg"{% endif %} alt="{{ title }} Thumbnail">
             </div>
             <div class="flex flex-col justify-between flex-1 p-6 bg-white">
               <div class="flex-1">
-                <a href="{{ post.url | url }}" class="block">
                   <h3 class="mt-2 text-xl font-semibold leading-7 {{ colors.headingsCustom or colors.headingsDefault }}">
                     {{ post.data.title }}
                   </h3>
@@ -23,8 +20,6 @@
                       {{ post.data.excerpt }}
                     </div>
                   {% endif %}
-
-                </a>
               </div>
 
               {# Found the TagPills are too much for this layout. Uncomment them below if you want to display them. #}
@@ -43,6 +38,26 @@
                   {% set postAuthor = authors | getAuthor(post.data.author) %}
                   {% include "components/authordate.njk" %}
                 {% endif %}
+              {% endif %}
+
+              {% if structure.g_showSources %}
+                <div class="flex items-center pt-2">
+                {% if post.data.urlSpotify %}
+                  <a aria-label="Link to Spotify" alt="Link to Spotify" class="hover:{{ colors.socialIconsHoverCustom or colors.socialIconsHoverDefault }}" href="{{ post.data.urlSpotify }}">
+                    {% svg "spotify", "mr-2 h-6 w-6 fill-current", "Spotify", "footer" %}
+                  </a>
+                {% endif %}
+                {% if post.data.urlApple %}
+                  <a aria-label="Link to Spotify" alt="Link to Spotify" class="hover:{{ colors.socialIconsHoverCustom or colors.socialIconsHoverDefault }}" href="{{ post.data.urlApple }}">
+                    {% svg "apple-podcast", "mr-2 h-6 w-6 fill-current", "Apple podcasts", "footer" %}
+                  </a>
+                {% endif %}
+                {% if post.data.urlSpotify %}
+                  <a aria-label="Link to Google podcasts" alt="Link to Google podcasts" class="hover:{{ colors.socialIconsHoverCustom or colors.socialIconsHoverDefault }}" href="{{ post.data.urlGoogle }}">
+                    {% svg "google-podcast", "h-6 w-6 fill-current", "Google podcasts", "footer" %}
+                  </a>
+                {% endif %}
+                </div>
               {% endif %}
             </div>
           </div>

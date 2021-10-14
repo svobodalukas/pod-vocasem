@@ -7,7 +7,6 @@
           <div class="flex flex-col ">
             <div class="flex flex-col justify-between flex-1 p-6 bg-white">
               <div class="flex-1">
-                <a href="{{ post.url | url }}" class="block">
                   <h3 class="mt-2 text-xl font-semibold leading-7 {{ colors.headingsCustom or colors.headingsDefault }}">
                     {{ post.data.title }}
                   </h3>
@@ -17,7 +16,6 @@
                       {{ post.data.excerpt }}
                     </div>
                   {% endif %}
-                </a>
               </div>
               <div class="flex-1">
                 {% if structure.g_showTagPills %}

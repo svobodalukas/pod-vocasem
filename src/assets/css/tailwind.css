@@ -53,7 +53,9 @@ pre code {
 }
 
 .bg-hero {
-	background: linear-gradient(45deg, hsla(193, 60%, 80%, 0.95), hsla(162, 42%, 70%, 0.85)), url('/assets/images/home/vocas1.jpg');
+	background: linear-gradient(45deg, hsla(193, 60%, 80%, 0.95), hsla(162, 42%, 70%, 0.85)), url('/assets/images/home/vocas2.jpg');
+	@apply bg-center bg-no-repeat;
+	background-size: cover;
 }
 
 .btn {
@@ -63,7 +65,7 @@ pre code {
 }
 
 .btn:hover {
-	background: rgba(255,255,255, 0.95);
+	background: rgb(255,255,255);
 }
 @variants responsive {
 	.text-7xl {

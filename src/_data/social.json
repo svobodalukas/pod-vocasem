@@ -2,16 +2,19 @@
 	{
 		"platform": "Spotify",
 		"icon": "spotify",
+		"iconBw": "spotify-bw",
 		"url": "https://spotify.com"
 	},
 	{
 		"platform": "Apple Podcasts",
 		"icon": "apple-podcast",
+		"iconBw": "apple-bw",
 		"url": "https://apple.com"
 	},
 	{
 		"platform": "Google Podcasts",
 		"icon": "google-podcast",
+		"iconBw": "google-bw",
 		"url": "https://www.google.com"
 	}
 ]

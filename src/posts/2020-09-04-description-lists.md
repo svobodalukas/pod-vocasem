@@ -4,6 +4,9 @@ date: 2020-09-04T17:44:03.000Z
 author: roxanne-darling
 excerpt: A custom 11ty shortcode allows you to create great looking and function Description Lists.
 draft: 
+urlSpotify: https://spotify.com
+urlApple: https://apple.com
+urlGoogle: https://google.com    
 seo:
   title:
   description:

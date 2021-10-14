@@ -41,6 +41,11 @@ module.exports = {
 	g_showAuthors: false,
 
 	/**
+	 * ===== Display podcast links =====
+	 */
+	 g_showSources: true,
+
+	/**
 	 * ===== Display Footer & Social Share Icons =====
 	 *
 	 * Set to fully disable display of the Social Links in the footer.
